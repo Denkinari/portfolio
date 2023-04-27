@@ -1,17 +1,42 @@
-const svgList = document.querySelectorAll(".pastas a");
-
-const mudarIcone = function () {
-  svgList.forEach((svg) => {
-    const path = svg.querySelector("path");
-    const originalPath = path.getAttribute("d");
-    const newPath =
-      "M1.39535 14.8837C1.03876 14.8837 0.717054 14.7403 0.430233 14.4535C0.143411 14.1667 0 13.845 0 13.4884V1.39535C0 1.03876 0.143411 0.717054 0.430233 0.430233C0.717054 0.143411 1.03876 0 1.39535 0H7.93023L9.32558 1.39535H17.2093C17.5659 1.39535 17.8876 1.53876 18.1744 1.82558C18.4612 2.1124 18.6047 2.43411 18.6047 2.7907H1.39535V13.4884L3.76744 4.18605H20L17.5116 13.814C17.4186 14.186 17.2481 14.4574 17 14.6279C16.7519 14.7985 16.4341 14.8837 16.0465 14.8837H1.39535Z";
-    svg.addEventListener("mouseover", function () {
-      path.setAttribute("d", newPath);
-    });
-    svg.addEventListener("mouseout", function () {
-      path.setAttribute("d", originalPath);
+const ativar = function () {
+  const pastas = document.querySelectorAll(".pastas a");
+  pastas.forEach((pasta) => {
+    pasta.addEventListener("click", function (event) {
+      event.preventDefault();
+      if (pasta.classList.contains("ativo")) {
+        pasta.classList.remove("ativo");
+      } else {
+        pastas.forEach((pasta) => {
+          pasta.classList.remove("ativo");
+        });
+        pasta.classList.add("ativo");
+      }
     });
   });
 };
-mudarIcone();
+ativar();
+
+function initAccordion() {
+  const accordionList = document.querySelectorAll(".js-accordion .pastas a");
+  function activeAccordion() {
+    const accordionConteudo = this.parentElement.nextElementSibling;
+    const isActive = accordionConteudo.classList.contains("ativo");
+    accordionList.forEach((item) => {
+      const conteudo = item.parentElement.nextElementSibling;
+      if (
+        conteudo !== accordionConteudo &&
+        conteudo.classList.contains("ativo")
+      ) {
+        conteudo.classList.remove("ativo");
+      }
+    });
+    accordionConteudo.classList.toggle("ativo", !isActive);
+    this.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+  accordionList.forEach((item) => {
+    item.addEventListener("click", activeAccordion);
+  });
+}
+initAccordion();
