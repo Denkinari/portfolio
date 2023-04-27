@@ -563,3 +563,230 @@ img {
 .fundo-roxo2 .texto-esquerda {
   margin-right: 500px;
 }
+
+@media (max-width: 1300px) {
+  .projetos-conteudo {
+    padding-right: 60px;
+  }
+}
+
+@media (max-width: 940px) {
+  body {
+    padding-right: 0px;
+  }
+  .introducao img {
+    width: 300px;
+  }
+
+  .introducao-texto {
+    margin-right: 0px;
+  }
+
+  .introducao-texto h1 {
+    font-size: 2rem;
+  }
+  .introducao-texto p {
+    font-size: 1rem;
+  }
+
+  .redes-sociais svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .projetos-conteudo {
+    width: 800px;
+  }
+  .conteudo-caixa h1 {
+    font-size: 1.5rem;
+  }
+  .conteudo-caixa p {
+    font-size: 0.8em;
+    bottom: -30px;
+  }
+
+  .conteudo-caixa .sites p {
+    bottom: -60px;
+  }
+
+  .projetos-conteudo .conteudo-caixa span {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 860px) {
+  .introducao img {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    padding-right: 60px;
+  }
+  .introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .introducao img {
+    margin: 0;
+  }
+
+  .redes-sociais {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+
+  .introducao-texto {
+    text-align: center;
+  }
+
+  .introducao-texto h1 {
+    font-size: 1.5rem;
+  }
+
+  .introducao-texto p {
+    font-size: 0.8em;
+  }
+
+  .introducao img {
+    width: 300px;
+  }
+
+  .pastas {
+    justify-content: center;
+  }
+
+  .pastas a svg {
+    width: 20px;
+  }
+
+  .pastas a p {
+    font-size: 1em;
+  }
+
+  .projetos-conteudo {
+    flex-direction: column;
+    width: 100%;
+    gap: 60px;
+    padding-right: 0;
+    align-items: center;
+    padding-bottom: 420px;
+  }
+
+  .projetos-conteudo .conteudo-caixa {
+    padding: 100px 50px;
+  }
+
+  .conteudo-caixa.sites p {
+    bottom: -30px;
+  }
+
+  .conteudo-caixa h1 {
+    font-size: 1.3rem;
+  }
+  .conteudo-caixa p {
+    font-size: 0.7em;
+    bottom: -30px;
+  }
+
+  .projetos-conteudo .conteudo-caixa span {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 620px) {
+  body {
+    padding: 20px 30px 24px 30px;
+  }
+  .introducao img {
+    width: 250px;
+  }
+}
+
+@media (max-width: 510px) {
+  .introducao img {
+    margin-bottom: 24px;
+  }
+
+  .pastas {
+    gap: 18px;
+  }
+
+  .pastas a svg {
+    width: 18px;
+  }
+
+  .pastas a p {
+    font-size: 0.8em;
+    padding: 3px;
+  }
+  .pastas a {
+    padding: 8px 0px 8px 20px;
+  }
+
+  .projetos-conteudo .conteudo-caixa {
+    padding: 100px 0px;
+  }
+
+  .conteudo-caixa.sites p {
+    bottom: -40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .introducao-texto h1 {
+    font-size: 1rem;
+  }
+
+  .introducao-texto p {
+    font-size: 0.6em;
+  }
+
+  .introducao img {
+    width: 150px;
+  }
+
+  .redes-sociais svg {
+    width: 20px;
+    gap: 10px;
+  }
+
+  .pastas {
+    gap: 10px;
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+  }
+
+  .prjetos {
+    width: auto;
+  }
+
+  .pasta-projetos,
+  .pasta-experiencia,
+  .pasta-mais-sobre {
+    justify-content: center;
+  }
+
+  .projetos-conteudo {
+    position: inherit;
+    padding-bottom: 40px;
+  }
+
+  .projetos-conteudo .conteudo-caixa {
+    padding: 0px;
+  }
+
+  .projetos-conteudo .glass {
+    max-width: 300px;
+  }
+
+  .conteudo-caixa.sites p {
+    bottom: -50px;
+  }
+}
