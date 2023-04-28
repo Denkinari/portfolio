@@ -167,6 +167,7 @@ img {
   margin-top: 20px;
   left: 0px;
   position: absolute;
+  user-select: none;
 }
 
 .projetos-conteudo {
@@ -270,11 +271,11 @@ img {
 }
 
 .experiencia-conteudo {
-  width: 1200px;
+  max-width: 1200px;
 }
 
 .experiencia-conteudo .glass {
-  width: 340px;
+  width: 320px;
   height: 380px;
   display: flex;
   justify-content: center;
@@ -564,13 +565,35 @@ img {
   margin-right: 500px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1200px) {
   .projetos-conteudo {
-    padding-right: 60px;
+    width: 900px;
+  }
+
+  .conteudo-caixa h1 {
+    font-size: 1.5rem;
+  }
+  .conteudo-caixa p {
+    font-size: 0.8em;
+    bottom: -30px;
+  }
+
+  .experiencia-conteudo {
+    flex-direction: column;
+    width: 100%;
+    overflow: scroll hidden;
+  }
+
+  .javascript {
+    position: relative;
+    padding-bottom: 60px;
   }
 }
 
-@media (max-width: 940px) {
+@media (max-width: 930px) {
+}
+
+@media (max-width: 930px) {
   body {
     padding-right: 0px;
   }
@@ -595,14 +618,8 @@ img {
   }
 
   .projetos-conteudo {
-    width: 800px;
-  }
-  .conteudo-caixa h1 {
-    font-size: 1.5rem;
-  }
-  .conteudo-caixa p {
-    font-size: 0.8em;
-    bottom: -30px;
+    gap: 24px;
+    padding-right: 0;
   }
 
   .conteudo-caixa .sites p {
@@ -614,15 +631,9 @@ img {
   }
 }
 
-@media (max-width: 860px) {
-  .introducao img {
-    margin-left: 60px;
-  }
-}
-
-@media (max-width: 720px) {
+@media (max-width: 930px) {
   body {
-    padding-right: 60px;
+    padding: 0px 60px 20px 60px;
   }
   .introducao {
     display: flex;
@@ -630,30 +641,24 @@ img {
     align-items: center;
   }
 
-  .introducao img {
-    margin: 0;
+  .introducao-texto {
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .introducao-texto h1 {
+    font-size: 1.6rem;
+  }
+
+  .introducao-texto p {
+    font-size: 1rem;
+    margin: 0px 32px 12px 32px;
   }
 
   .redes-sociais {
     width: 100%;
     justify-content: space-evenly;
     margin: auto;
-  }
-
-  .introducao-texto {
-    text-align: center;
-  }
-
-  .introducao-texto h1 {
-    font-size: 1.5rem;
-  }
-
-  .introducao-texto p {
-    font-size: 0.8em;
-  }
-
-  .introducao img {
-    width: 300px;
   }
 
   .pastas {
@@ -696,20 +701,63 @@ img {
   .projetos-conteudo .conteudo-caixa span {
     font-size: 0.6em;
   }
+
+  .glass.texto p {
+    font-size: 0.8em;
+  }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 800px) {
+  .introducao-texto p {
+    font-size: 0.8rem;
+  }
+
+  .experiencia-conteudo .glass {
+    width: 250px;
+  }
+
+  .experiencia-conteudo .conteudo-caixa img {
+    width: 80px;
+  }
+
+  .experiencia-conteudo .conteudo-caixa h1 {
+    font-size: 1.5rem;
+  }
+
+  .experiencia-conteudo .conteudo-caixa span {
+    font-size: 1rem;
+  }
+
+  .barra-de-experiencia .barra-experiencia {
+    width: 200px;
+  }
+}
+
+@media (max-width: 670px) {
   body {
     padding: 20px 30px 24px 30px;
   }
   .introducao img {
     width: 250px;
   }
+
+  .introducao-texto p {
+    font-size: 0.8em;
+  }
+  .classe {
+    display: block;
+    font-size: 0.7em;
+    margin-bottom: 4px;
+  }
 }
 
-@media (max-width: 510px) {
+@media (max-width: 630px) {
   .introducao img {
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+  }
+
+  .introducao-texto h1 {
+    font-size: 1.2rem;
   }
 
   .pastas {
@@ -721,7 +769,7 @@ img {
   }
 
   .pastas a p {
-    font-size: 0.8em;
+    font-size: 0.7em;
     padding: 3px;
   }
   .pastas a {
@@ -733,7 +781,29 @@ img {
   }
 
   .conteudo-caixa.sites p {
-    bottom: -40px;
+    bottom: -35px;
+  }
+
+  .experiencia-conteudo .conteudo-caixa {
+    width: 200px;
+    height: 320px;
+  }
+
+  .experiencia-conteudo .conteudo-caixa img {
+    width: 60px;
+  }
+  .conteudo-caixa .barra-experiencia {
+    width: 150px;
+  }
+
+  .glass.texto {
+    width: 100%;
+    height: 100%;
+  }
+
+  .experiencia-conteudo .glass.texto p {
+    font-size: 0.7em;
+    padding: 20px 8px;
   }
 }
 
@@ -748,6 +818,10 @@ img {
 
   .introducao img {
     width: 150px;
+  }
+
+  .redes-sociais {
+    justify-content: center;
   }
 
   .redes-sociais svg {
@@ -787,6 +861,20 @@ img {
   }
 
   .conteudo-caixa.sites p {
-    bottom: -50px;
+    bottom: -35px;
+  }
+
+  .experiencia-conteudo {
+    position: relative;
+    flex-direction: row;
+    gap: 0px;
+    justify-content: center;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    padding: 18px;
   }
 }
