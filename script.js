@@ -1,3 +1,8 @@
+const introDiv = document.querySelector(".intro");
+setTimeout(() => {
+  introDiv.classList.add("hide");
+}, 5000);
+
 const ativar = function () {
   const pastas = document.querySelectorAll(".pastas a");
   pastas.forEach((pasta) => {

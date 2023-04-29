@@ -1,5 +1,4 @@
 body {
-  margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #050505;
   max-width: 1200px;
@@ -35,7 +34,7 @@ img {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999999;
+  z-index: 4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,6 +71,10 @@ img {
   line-height: 1.2em;
 }
 
+.hide {
+  display: none;
+}
+
 @keyframes fade {
   0% {
     opacity: 1;
@@ -79,7 +82,6 @@ img {
   50% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
