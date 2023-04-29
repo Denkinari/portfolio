@@ -583,10 +583,10 @@ img {
     width: 100%;
     overflow: scroll hidden;
   }
-
-  .javascript {
-    position: relative;
-    padding-bottom: 60px;
+  .photoshop,
+  .illustrator,
+  .figma {
+    padding: 0;
   }
 }
 
@@ -797,8 +797,12 @@ img {
   }
 
   .glass.texto {
-    width: 100%;
-    height: 100%;
+    width: inherit;
+  }
+
+  .css,
+  .javascript {
+    position: relative;
   }
 
   .experiencia-conteudo .glass.texto p {
@@ -807,17 +811,21 @@ img {
   }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 460px) {
+  body {
+    padding: 0px;
+  }
+
+  .introducao-texto {
+    margin-bottom: 0px;
+  }
+
   .introducao-texto h1 {
     font-size: 1rem;
   }
 
-  .introducao-texto p {
-    font-size: 0.6em;
-  }
-
   .introducao img {
-    width: 150px;
+    width: 70%;
   }
 
   .redes-sociais {
@@ -830,14 +838,20 @@ img {
   }
 
   .pastas {
-    gap: 10px;
     flex-direction: column;
     width: fit-content;
     margin: auto;
-    align-items: center;
   }
 
-  .prjetos {
+  .pastas a {
+    padding: 8px 0px 8px 12px;
+  }
+
+  .pastas a svg {
+    width: 12px;
+  }
+
+  .projetos {
     width: auto;
   }
 
@@ -867,14 +881,22 @@ img {
   .experiencia-conteudo {
     position: relative;
     flex-direction: row;
-    gap: 0px;
+    gap: 15px;
     justify-content: center;
     overflow-y: scroll;
+    width: 100%;
+  }
+
+  .glass.texto {
+    height: 100%;
   }
 }
 
 @media (max-width: 350px) {
-  body {
-    padding: 18px;
+  .introducao h1 {
+    font-size: 0.8rem;
+  }
+  .introducao-texto p {
+    font-size: 0.6em;
   }
 }
