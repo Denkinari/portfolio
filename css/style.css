@@ -891,9 +891,6 @@ img {
   body {
     padding: 20px 30px 24px 30px;
   }
-  .introducao img {
-    width: 250px;
-  }
 
   .introducao-texto p {
     font-size: 0.8em;
@@ -1012,8 +1009,12 @@ img {
     font-size: 1rem;
   }
 
+  .introducao-texto p {
+    font-size: 0.6em;
+  }
+
   .introducao img {
-    width: 70%;
+    width: 60%;
   }
 
   .redes-sociais {
@@ -1092,12 +1093,12 @@ img {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 415px) {
   .introducao h1 {
     font-size: 0.8rem;
   }
   .introducao-texto p {
-    font-size: 0.6em;
+    font-size: 0.4em;
   }
 
   .mais-sobre-introducao .minha-foto {
