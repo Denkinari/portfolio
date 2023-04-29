@@ -546,14 +546,14 @@ img {
   position: absolute;
   max-width: 500px;
   right: 100px;
-  top: 800px;
+  margin-top: -50px;
 }
 
 .fundo-roxo2 {
   width: 100%;
   height: 500px;
   background-color: #34066b;
-  border-radius: 6px;
+  border-radius: 6px 6px 0 0;
 }
 
 .fundo-roxo2 .texto-direita {
@@ -590,48 +590,38 @@ img {
   }
 }
 
-@media (max-width: 930px) {
-}
-
-@media (max-width: 930px) {
-  body {
-    padding-right: 0px;
+@media (max-width: 1160px) {
+  .fundo-roxo,
+  .fundo-roxo2 {
+    height: auto;
   }
-  .introducao img {
-    width: 300px;
+  .fundo-roxo p {
+    width: auto;
   }
-
-  .introducao-texto {
-    margin-right: 0px;
+  .mais-sobre-conteudo p {
+    font-size: 0.8rem;
   }
 
-  .introducao-texto h1 {
-    font-size: 2rem;
-  }
-  .introducao-texto p {
-    font-size: 1rem;
+  .referencias-artisticas .texto-direita {
+    margin: 0 60px 80px 400px;
   }
 
-  .redes-sociais svg {
-    width: 28px;
-    height: 28px;
+  .conteudo2 img {
+    width: 500px;
+    margin-top: -50px;
+    margin-right: 30px;
   }
 
-  .projetos-conteudo {
-    gap: 24px;
-    padding-right: 0;
+  .fundo-roxo2 .texto-direita {
+    margin-left: 500px;
   }
 
-  .conteudo-caixa .sites p {
-    bottom: -60px;
-  }
-
-  .projetos-conteudo .conteudo-caixa span {
-    font-size: 0.8em;
+  .fundo-roxo2 .texto-esquerda {
+    padding-bottom: 60px;
   }
 }
 
-@media (max-width: 930px) {
+@media (max-width: 1000px) {
   body {
     padding: 0px 60px 20px 60px;
   }
@@ -705,6 +695,80 @@ img {
   .glass.texto p {
     font-size: 0.8em;
   }
+
+  .fundo-roxo {
+    height: 500px;
+  }
+
+  .fundo-roxo p {
+    text-align: center;
+    margin: 40px 20px;
+  }
+
+  .mais-sobre-introducao {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mais-sobre-introducao p {
+    font-size: 1rem;
+  }
+
+  .mais-sobre-introducao .minha-foto {
+    right: auto;
+    width: 300px;
+    margin-top: 200px;
+    border-radius: 10px;
+  }
+
+  .referencias-artisticas .titulo {
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .referencias-artisticas .titulo h1 {
+    margin: 5px 0px;
+  }
+
+  .referencias-artisticas .titulo img {
+    width: 100%;
+  }
+  .referencias-artisticas .texto-direita {
+    text-align: center;
+    margin: 12px 40px;
+  }
+
+  .conteudo2 {
+    flex-direction: column;
+  }
+
+  .referencias-artisticas img {
+    order: 1;
+    margin: auto;
+    position: static;
+    width: 350px;
+  }
+  .referencias-artisticas .texto-esquerda {
+    order: 2;
+    text-align: center;
+    margin: 12px 40px 0px 40px;
+  }
+
+  .fundo-roxo2 .texto-direita {
+    padding: 24px;
+    margin: 12px 20px 0px 20px;
+  }
+
+  .fundo-roxo2 .texto-direita::after {
+    content: " ";
+    display: block;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    background-size: contain;
+    background-image: url(../img/kirby.png);
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 800px) {
@@ -730,6 +794,14 @@ img {
 
   .barra-de-experiencia .barra-experiencia {
     width: 200px;
+  }
+  .mais-sobre-conteudo p {
+    font-size: 0.8em;
+    line-height: 1.3em;
+  }
+
+  .mais-sobre-conteudo .minha-foto {
+    margin-top: 100px;
   }
 }
 
@@ -808,6 +880,28 @@ img {
   .experiencia-conteudo .glass.texto p {
     font-size: 0.7em;
     padding: 20px 8px;
+  }
+
+  .mais-sobre-conteudo p {
+    font-size: 0.6em;
+  }
+
+  .fundo-roxo {
+    height: 300px;
+  }
+
+  .mais-sobre-introducao .minha-foto {
+    width: 200px;
+    margin-top: 100px;
+  }
+
+  .referencias-artisticas img {
+    width: 250px;
+  }
+
+  .fundo-roxo2 .texto-direita::after {
+    width: 200px;
+    height: 200px;
   }
 }
 
@@ -890,6 +984,18 @@ img {
   .glass.texto {
     height: 100%;
   }
+
+  .mais-sobre-conteudo {
+    position: relative;
+  }
+
+  .referencias-artisticas .titulo .tinta {
+    width: 300px;
+  }
+  .referencias-artisticas .titulo h1 {
+    margin: 10px 0px;
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 350px) {
@@ -898,5 +1004,9 @@ img {
   }
   .introducao-texto p {
     font-size: 0.6em;
+  }
+
+  .mais-sobre-introducao .minha-foto {
+    margin-top: 150px;
   }
 }
