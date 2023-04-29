@@ -26,6 +26,20 @@ img {
   max-width: 100%;
 }
 
+@font-face {
+  font-family: "Centabel Book";
+  src: url(../font/centabel.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../font/Montserrat-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .intro {
   background: #050505;
   position: fixed;
