@@ -27,6 +27,64 @@ img {
   max-width: 100%;
 }
 
+.intro {
+  background: #050505;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  animation: fade 5s forwards;
+}
+
+.intro .intro-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 200px;
+}
+
+.intro .intro-conteudo svg {
+  fill: #60bf75;
+}
+
+.intro .intro-conteudo h1 {
+  font-family: "Centabel Book";
+  font-size: 5rem;
+  font-weight: 400;
+  margin-top: -20px;
+  margin-bottom: 12px;
+  color: #60bf75;
+}
+
+.intro .intro-conteudo p {
+  text-align: center;
+  margin: auto;
+  font-family: "Monteserrat";
+  color: #f3f3f3;
+  font-size: 1.2rem;
+  line-height: 1.2em;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .introducao {
   display: grid;
   width: auto;
@@ -37,7 +95,6 @@ img {
 .introducao img {
   max-width: 800px;
   max-height: 400px;
-  margin: auto;
 }
 
 .introducao-texto {
@@ -625,6 +682,15 @@ img {
   body {
     padding: 0px 60px 20px 60px;
   }
+
+  .intro .intro-conteudo {
+    margin: 100px;
+  }
+
+  .intro .intro-conteudo p {
+    font-size: 1rem;
+  }
+
   .introducao {
     display: flex;
     flex-direction: column;
@@ -824,6 +890,10 @@ img {
 }
 
 @media (max-width: 630px) {
+  .intro .intro-conteudo {
+    margin: 50px;
+  }
+
   .introducao img {
     margin-bottom: 12px;
   }
@@ -906,6 +976,14 @@ img {
 }
 
 @media (max-width: 500px) {
+  .intro .intro-conteudo h1 {
+    font-size: 4rem;
+    margin-top: -10px;
+  }
+  .intro .intro-conteudo p {
+    font-size: 0.8em;
+  }
+
   body {
     padding: 0px;
   }
