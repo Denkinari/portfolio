@@ -1007,10 +1007,11 @@ img {
 
   .introducao-texto h1 {
     font-size: 1rem;
+    margin-bottom: 6px;
   }
 
   .introducao-texto p {
-    font-size: 0.6em;
+    font-size: 0.8em;
   }
 
   .introducao img {
@@ -1098,7 +1099,7 @@ img {
     font-size: 0.8rem;
   }
   .introducao-texto p {
-    font-size: 0.4em;
+    font-size: 0.5em;
   }
 
   .mais-sobre-introducao .minha-foto {
